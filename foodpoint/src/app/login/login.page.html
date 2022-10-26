@@ -1,0 +1,19 @@
+<ion-content>
+<div class="fundo-branco">
+  <div class="logo"></div>
+  <div class="form">
+    <ion-item lines="none" color="none">
+     <ion-label position="stacked">E-mail</ion-label>
+      <ion-input type="email" placeholder="E-mail" required #email></ion-input>
+    </ion-item>
+    <ion-item lines="none" color="none">
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" placeholder="Senha" required #senha></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" type="submit" shape="round" Strong>Login</ion-button>
+  </div>
+<hr>
+<ion-button expand="block" type="submit" shape="round" Strong (click)="authService.GoogleAuth()">Entrar com Google</ion-button>
+</div>
+</ion-content>

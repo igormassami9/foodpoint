@@ -1,0 +1,42 @@
+*{color: #ffffff}
+ion-content{
+    
+    .fundo-branco{
+        background-color: #ffffff;
+        background-size: cover;
+        background-repeat: repeat-y;
+        width: 100vw;
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        background-image: url('/assets/logo-foodpoint.png');
+        background-repeat: no-repeat;
+        min-width: 220px;
+        min-height: 220px;
+        background-size: contain;
+        background-position: center;
+        margin: 30px 0px
+        
+    }
+    .form{
+        width: 85vw;
+    }
+    ion-input{
+        border-radius: 12px;
+        color:#9E9E9E;
+        background-color: #D9D9D9;
+        --padding-start: 15px;
+        max-height: 50px;
+        min-height: 50px;
+        margin-top: 17px;
+    }
+    hr{width: 90%; height: 1px;
+        background-color: #353535;
+        margin: 15px 0px;
+        z-index: 98;
+    }
+}
