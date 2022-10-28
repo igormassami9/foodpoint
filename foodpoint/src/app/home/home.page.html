@@ -1,8 +1,21 @@
 <ion-content *ngIf="auth.user | async as user">
+  <ion-button class="btn-sair" expand="block" type="submit" shape="square" Strong (click)="logout()">Sair</ion-button>
   <div class="fundo-branco">
-  <img src='{{user.photoURL}}'>
-    <h1>Olá, {{user.displayName}}</h1>
-  <ion-button expand="block" type="submit" shape="round" Strong (click)="logout()">Sair</ion-button>
+    <div class="shopping-cart"></div>
+    <h1 class="user-name">Olá, {{user.displayName}}</h1>
+    <h1 class="categorias">Categorias</h1>
+
+    <div class="foto-restaurante"></div>
+    <p class="texto-restaurante">Restaurante</p>
+
+    <div class="foto-pizzaria"></div>
+    <p class="texto-pizzaria">Pizzaria</p>
+
+    <div class="foto-hamburgueria"></div>
+    <p class="texto-hamburgueria">Hamburgueria</p>
+
+    <h1 class="destaques">Destaques</h1>
+
   </div>
   </ion-content>
   
