@@ -148,7 +148,8 @@ ion-content{
         text-align: center;
         color: #3F3E3E;
     }
-    .destaques{position: absolute;
+    .destaques{
+        position: absolute;
         width: 138px;
         height: 36px;
         left: 18px;
@@ -160,5 +161,89 @@ ion-content{
         font-size: 29px;
         line-height: 33px;
         color: #3F3E3E;
+    }
+    .cartaopromo1{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        left: 3.08%;
+        right: 52.56%;
+        top: 42.01%;
+        bottom: 46.56%;
+        
+        background-image: url(/assets/cartaopromo1.png);
+        border-radius: 3px;
+    }
+    .cartaopromo2{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        left: 51.05%;
+        right: 2.59%;
+        top: 42.01%;
+        bottom: 46.56%;
+        
+        background-image: url(/assets/cartaopromo2.png);
+        border-radius: 3px;
+    }
+    .cartaopromo3{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        left: 51.05%;
+        right: 2.59%;
+        top: 55.66%;
+        
+        background-image: url(/assets/cartaopromo1.png);
+        border-radius: 3px;
+    }
+    .cartaopromo4{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        left: 2.59%;
+        right: 51.05%; 
+        top: 55.66%;
+        
+        background-image: url(/assets/cartaopromo2.png);
+        border-radius: 3px;
+    }.cartaopromo5{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        left: 2.59%;
+        right: 51.05%; 
+        top: 68.86%;
+        
+        background-image: url(/assets/cartaopromo1.png);
+        border-radius: 3px;
+    }.cartaopromo6{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 90px;
+
+        right: 2.59%;
+        left: 51.05%; 
+        top: 68.86%;
+        
+        background-image: url(/assets/cartaopromo2.png);
+        border-radius: 3px;
     }
 }
