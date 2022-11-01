@@ -1,9 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content *ngIf="auth.user | async as user">
+  <div class="fundo-branco">
+    <h1 class="perfil">Perfil</h1>
+    <div class="icone-perfil"></div>   
+    <h1 class="user-name">{{user.displayName}}</h1>
+    <p class="label-info">Sobre</p>
+    <ion-textarea class="caixa-texto" placeholder="Conte mais sobre você!"></ion-textarea>
 
-<ion-content>
-
+  </div>
 </ion-content>

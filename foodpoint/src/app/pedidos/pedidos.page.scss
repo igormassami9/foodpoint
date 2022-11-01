@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+*{color: #ffffff}
+ion-content{
+    .fundo-branco{
+        background-color: #ffffff;
+        background-size: cover;
+        background-repeat: repeat-y;
+        width: 100vw;
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-pedidos{
+        position: absolute;
+        width: 219px;
+        height: 25px;
+        left: 86px;
+        top: 13px;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        
+        color: #3F3E3E;
+    }
+    .historico{
+        position: absolute;
+        width: 123px;
+        height: 28px;
+        left: 0px;
+        top: 99px;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
+    .ex-pedido{
+        box-sizing: border-box;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 343px;
+        height: 84px;
+        left: 23px;
+        top: 148px;
+        
+        background-image: url(/assets/exemplo-pedido.png);
+    }
+}
