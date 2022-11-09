@@ -47,4 +47,101 @@ ion-content{
         background-image: url(/assets/mcdonald-logo.png);
         background-size: contain;
     }
+    .mcdonald-titulo{
+        position: absolute;
+        left: 9.74%;
+        right: 60.77%;
+        top: 23.29%;
+        bottom: 73.1%;
+        text-align: center;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        
+        color: #000000;
+    }
+    .burgerking{
+        position: absolute;
+        left: 62.82%;
+        right: 11.54%;
+        top: 12.68%;
+        bottom: 75.47%;
+
+        background-image: url(/assets/burgerking-logo.png);
+        background-size: contain;
+    }
+    .burgerking-titulo{
+        position: absolute;
+        left: 57.95%;
+        right: 6.67%;
+        top: 23.29%;
+        bottom: 73.1%;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        
+        color: #000000;
+    }
+    .jungle-burger{
+        position: absolute;
+        left: 11.54%;
+        right: 62.82%;
+        top: 36.49%;
+        bottom: 51.66%;
+        
+        background-image: url(/assets/jungle-burger-logo.png);
+        background-size: contain;
+        border-radius: 3px;
+    }
+    .jungle-burger-titulo{
+        position: absolute;
+        left: 7.69%;
+        right: 58.97%;
+        top: 47.53%;
+        bottom: 47.87%;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        
+        color: #000000;
+    }
+    .habibs{
+        position: absolute;
+        left: 62.82%;
+        right: 11.54%;
+        top: 36.49%;
+        bottom: 51.66%;
+        
+        background-image: url(/assets/habibs-logo.png);
+        background-size: contain;
+        border-radius: 3px;
+    }
+    .habibs-titulo{
+        position: absolute;
+        left: 59.49%;
+        right: 9.74%;
+        top: 47.53%;
+        bottom: 47.87%;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
 }
