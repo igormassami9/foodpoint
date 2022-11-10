@@ -14,26 +14,45 @@ ion-content{
     .form{
         width: 85vw;
     }
-    .icone-lupa{
-        background-image: url('/assets/search-outline.png');
+    .lanches{
+        position: center;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
+        
+        
+        font-family: 'Asap';
+        font-style: normal;
+        text-align: center;
+        
+        color: #3F3E3E;  
+    }
+    ion-buttons{
+        background-image: url('/assets/seta-voltar.png');
         background-size: contain;
         position: absolute;
+        background-color: #ffffff00;
 
         height: 20px;
         width: 20px;
         left: 25px;
-        top: 22px;  
+        top: 25px;  
     }
-    ion-input{
+    .lanches-titulo{
         position: absolute;
-        height: 31px;
-        width: 301px;
-        left: 54px;
-        top: 16px;        
-
-        border-radius: 3px;
-        color: #65676D;
-        background: #D9D9D9;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
+        
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        
+        color: #3F3E3E;        
     }
     .mcdonald{
         position: absolute;
@@ -69,7 +88,7 @@ ion-content{
         right: 11.54%;
         top: 12.68%;
         bottom: 75.47%;
-
+        background-repeat: no-repeat;
         background-image: url(/assets/burgerking-logo.png);
         background-size: contain;
     }
