@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+*{color: #ffffff}
+ion-content{
+    .fundo-branco{
+        background-color: #ffffff;
+        background-size: cover;
+        background-repeat: repeat-y;
+        width: 100vw;
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        width: 85vw;
+    }
+    ion-buttons{
+        background-image: url('/assets/seta-voltar.png');
+        background-size: contain;
+        position: absolute;
+        background-color: #ffffff00;
+
+        height: 20px;
+        width: 20px;
+        left: 25px;
+        top: 25px;  
+    }
+    .sorvetes-titulo{
+        position: absolute;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
+        
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        
+        color: #3F3E3E;        
+    }
+    .chiquinho{
+        position: absolute;
+
+        height: 100px;
+        width: 100px;
+        left: 45px;
+        top: 107px;
+        border-radius: 0px;
+        
+        background-image: url(/assets/chiquinho-logo.png);
+        background-size: contain;
+    }
+    .chiquinho-titulo{
+        position: absolute;
+        left: 9.74%;
+        right: 60.77%;
+        top: 23.29%;
+        bottom: 73.1%;
+        text-align: center;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        
+        color: #000000;
+    }
+    .san-paolo{
+        position: absolute;
+        left: 62.82%;
+        right: 11.54%;
+        top: 12.68%;
+        bottom: 75.47%;
+        background-repeat: no-repeat;
+        background-image: url(/assets/san-paolo-logo.png);
+        background-size: contain;
+        border-radius: 5px;
+    }
+    .san-paolo-titulo{
+        position: absolute;
+        left: 57.95%;
+        right: 6.67%;
+        top: 23.29%;
+        bottom: 73.1%;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        
+        color: #000000;
+    }
+}

@@ -50,6 +50,22 @@ const routes: Routes = [
   {
     path: 'categorias-doce',
     loadChildren: () => import('./categorias-doce/categorias-doce.module').then( m => m.CategoriasDocePageModule)
+  },
+  {
+    path: 'cardapio-lanche',
+    loadChildren: () => import('./cardapio-lanche/cardapio-lanche.module').then( m => m.CardapioLanchePageModule)
+  },
+  {
+    path: 'cardapio-pizza',
+    loadChildren: () => import('./cardapio-pizza/cardapio-pizza.module').then( m => m.CardapioPizzaPageModule)
+  },
+  {
+    path: 'cardapio-sorvete',
+    loadChildren: () => import('./cardapio-sorvete/cardapio-sorvete.module').then( m => m.CardapioSorvetePageModule)
+  },
+  {
+    path: 'cardapio-doce',
+    loadChildren: () => import('./cardapio-doce/cardapio-doce.module').then( m => m.CardapioDocePageModule)
   }
 ];
 @NgModule({
