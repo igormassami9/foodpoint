@@ -246,20 +246,70 @@ ion-content{
         background-image: url(/assets/cartaopromo2.png);
         border-radius: 3px;
     }
-    .texto-teste{
+    .texto1{
         position: absolute;
-        width: 83px;
+        width: 90px;
         height: 63px;
         left: 99px;
         top: 354px;
+
+        top: 42.01%;
+        bottom: 46.56%;
         
         font-family: 'Asap';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
-        line-height: 17px;
-        text-align: center;
+        font-size: 17px;
+        line-height: 25px;
         
-        color: #000000;
+        color: #ffffff;
+    }
+    .texto2{
+        position: absolute;
+        width: 90px;
+        height: 63px;
+        left: 287px;
+        top: 350px;
+        
+        top: 41.01%;
+        bottom: 46.56%;
+
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 25px;
+        
+        color: #FFFFFF;
+    }
+    .texto3{
+        position: absolute;
+        width: 90px;
+        height: 63px;
+        top: 422px;
+        left: 282px;
+        top: 55.66%;
+
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;        
+        color: #FFFFFF;
+    }
+    .texto4{
+        position: absolute;
+        width: 90px;
+        height: 63px;
+        top: 422px;
+        left: 89px;
+        top: 54.66%;
+        
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;        
+        color: #FFFFFF;
     }
 }

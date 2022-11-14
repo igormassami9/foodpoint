@@ -16,9 +16,9 @@ export class HomePage implements OnInit {
     public router:Router,
     public auth: AngularFireAuth,
     firestore: AngularFirestore
-    ) {    console.log(router.url);
+    ) {console.log(router.url);
     this.produtos = firestore.collection('produtos').valueChanges();
-    console.log(this.produtos) }
+    console.log(this.produtos)}
 
   ngOnInit() {
   }

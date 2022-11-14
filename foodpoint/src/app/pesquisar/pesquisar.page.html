@@ -5,12 +5,14 @@
     <ion-input type="text" placeholder="Busque por loja ou item"></ion-input>
     <p class="texto-categoria">Categorias</p>
 
-    <div class="foto-pizza" [routerLink]="['/categorias-pizza']"></div>
+    <div class="foto-pizza" style="background-image: url('/assets/pizza.png');" [routerLink]="['/categorias-pizza']"></div>
     <p class="texto-pizza" [routerLink]="['/categorias-pizza']">Pizzas</p>
 
-    <div class="foto-hamburguer" [routerLink]="['/categorias-burger']"></div>
-    <p class="texto-hamburguer" [routerLink]="['/categorias-burger']">Lanches</p>
-    
+    <div *ngFor="let categoria of categorias | async">
+    <div class="foto-hamburguer" style="background-image: url('{{categoria.imagem}}');" [routerLink]="['/categorias-burger']"></div>
+    <p class="texto-hamburguer" [routerLink]="['/categorias-burger']">{{categoria.nome}}</p>
+    </div>
+
     <div class="foto-sorvete" [routerLink]="['/categorias-sorvete']"></div>
     <p class="texto-sorvete"  [routerLink]="['/categorias-sorvete']">Sorvetes</p>
     

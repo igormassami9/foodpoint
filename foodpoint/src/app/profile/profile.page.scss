@@ -31,14 +31,14 @@ ion-content{
         color: #3F3E3E;
     }
     .icone-perfil{
-        background-image: url(/assets/icone-perfil.png);
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         width: 250px;
         height: 271px;
         left: 70px;
-        top: 68px;        
+        top: 68px;     
+        border-radius: 50%;   
     }
     .user-name{
         position: absolute;

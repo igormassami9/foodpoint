@@ -1,7 +1,9 @@
 <ion-content *ngIf="auth.user | async as user">
   <div class="fundo-branco">
     <h1 class="perfil">Perfil</h1>
-    <div class="icone-perfil"></div>   
+
+    <img class="icone-perfil" [src]="user.photoURL" referrerpolicy="no-referrer">
+    
     <h1 class="user-name">{{user.displayName}}</h1>
     <p class="label-info">Sobre</p>
     <ion-textarea class="caixa-texto" placeholder="Conte mais sobre você!"></ion-textarea>
