@@ -5,46 +5,24 @@
     </ion-buttons>
       <p class="cardapio-titulo">Cardápio</p>
 
-      <ion-card class="flex-row">
+      <ion-card class="flex-row" *ngFor="let item of itens | async">
         <div>
           <ion-thumbnail slot="start">
-            <img class="teste007" alt="image" src="../assets/lanche/burger1.png">
+            <img class="teste007" alt="image" [src]="item.imagem">
           </ion-thumbnail>
         </div>
         <div>
         <ion-card-header>
-          <ion-card-title>Cheeseburger</ion-card-title>
-          <ion-card-subtitle>R$ 7,00</ion-card-subtitle>
+          <ion-card-title>{{item.nome}}</ion-card-title>
+          <ion-card-subtitle>{{item.valor}}</ion-card-subtitle>
         </ion-card-header>
       
         <ion-card-content>
-          Um hamburger com carne bovina grelhada de 60g, pão com gergelim, queijo derretido, picles, katchup e mostarda.
+          {{item.descricao}}
         </ion-card-content>
       
       </div>
       </ion-card>
-
-      <ion-card class="flex-row">
-        <div>
-          <ion-thumbnail slot="start">
-            <img alt="image" src="../assets/lanche/burger1.png">
-          </ion-thumbnail>
-        </div>
-        <div>
-        <ion-card-header>
-          <ion-card-title>Cheeseburger</ion-card-title>
-          <ion-card-subtitle>R$ 7,00</ion-card-subtitle>
-        </ion-card-header>
-      
-        <ion-card-content>
-          Um hamburger com carne bovina grelhada de 60g, pão com gergelim, queijo derretido, picles, katchup e mostarda.
-        </ion-card-content>
-      
-      </div>
-      </ion-card>
-   
-
-
 
   </div>
   </ion-content>

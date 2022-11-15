@@ -1,23 +1,15 @@
 <ion-content>
   <div class="fundo-branco">
-    <div class="icone-lupa"></div>
-    <ion-label position="stacked"></ion-label>
-    <ion-input type="text" placeholder="Busque por loja ou item"></ion-input>
-    <p class="texto-categoria">Categorias</p>
-
-    <div class="foto-pizza" style="background-image: url('/assets/pizza.png');" [routerLink]="['/categorias-pizza']"></div>
-    <p class="texto-pizza" [routerLink]="['/categorias-pizza']">Pizzas</p>
-
-    <div *ngFor="let categoria of categorias | async">
-    <div class="foto-hamburguer" style="background-image: url('{{categoria.imagem}}');" [routerLink]="['/categorias-burger']"></div>
-    <p class="texto-hamburguer" [routerLink]="['/categorias-burger']">{{categoria.nome}}</p>
+    <div class="header">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-input placeholder="Busque por categoria"></ion-input>
+      </div>
+    <div class="organizador">
+      <div class="container-categoria" *ngFor="let categoria of categorias | async">        
+        <img class="img-categoria" [src]="categoria.imagem" (click)="abreLoja(categoria.id)">
+        <p class="categoria-titulo" (click)="abreLoja(categoria.id)">{{categoria.nome}}</p>
+      </div>
     </div>
-
-    <div class="foto-sorvete" [routerLink]="['/categorias-sorvete']"></div>
-    <p class="texto-sorvete"  [routerLink]="['/categorias-sorvete']">Sorvetes</p>
-    
-    <div class="foto-pudim" [routerLink]="['/categorias-doce']"></div>
-    <p class="texto-doce" [routerLink]="['/categorias-doce']">Doces</p>
 
   </div>
   </ion-content>

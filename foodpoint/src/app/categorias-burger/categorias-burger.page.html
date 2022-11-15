@@ -1,25 +1,18 @@
 <ion-content>
   <div class="fundo-branco">
 
+    <div class="header">
     <ion-buttons slot="start">
       <ion-back-button class="seta-voltar" defaultHref="pesquisar"></ion-back-button>
     </ion-buttons>
-    
     <p class="lanches-titulo">Lanches</p>
-    
-    <div class="mcdonald" [routerLink]="['/cardapio-lanche']"></div>
-    <p class="mcdonald-titulo" [routerLink]="['/cardapio-lanche']">McDonald's</p>
-    
-    <div class="burgerking" [routerLink]="['/cardapio-lanche']"></div>
-    <p class="burgerking-titulo" [routerLink]="['/cardapio-lanche']">Burger King</p>
-    
-    <div class="jungle-burger" [routerLink]="['/cardapio-lanche']"></div>
-    <p class="jungle-burger-titulo" [routerLink]="['/cardapio-lanche']">Jungle Burger</p>
-    
-    <div class="habibs" [routerLink]="['/cardapio-lanche']"></div>
-    <p class="habibs-titulo" [routerLink]="['/cardapio-lanche']">Habib's</p>
-
-
+    </div>
+  <div class="organizador">
+    <div class="container-lojas" *ngFor="let loja of lojas | async">        
+      <img class="img-lojas" [src]="loja.imagem" (click)="abreCardapio(loja.id)">
+      <p class="lojas-titulo" (click)="abreCardapio(loja.id)">{{loja.nome}}</p>
+    </div>
+  </div>
 
   </div>
   </ion-content>

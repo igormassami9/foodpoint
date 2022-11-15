@@ -1,5 +1,6 @@
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pesquisar',
@@ -10,7 +11,8 @@ export class PesquisarPage implements OnInit {
   categorias: any;
 
   constructor(
-    private firestore: AngularFirestore
+    private firestore: AngularFirestore,
+    private router: Router
   ) { 
     this.categorias = this.firestore.collection("categorias").valueChanges()
 
@@ -18,5 +20,9 @@ export class PesquisarPage implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  abreLoja(categoria) {
+    console.log(categoria)
+    this.router.navigate(["categorias-burger"],{queryParams: [categoria]})
+  }
 }

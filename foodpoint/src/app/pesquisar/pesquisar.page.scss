@@ -14,88 +14,18 @@ ion-content{
     .form{
         width: 85vw;
     }
-    .icone-lupa{
-        background-image: url('/assets/search-outline.png');
-        background-size: contain;
-        position: absolute;
-
-        height: 20px;
-        width: 20px;
-        left: 25px;
-        top: 22px;  
+    ion-icon{
+        color: red;
+        height: 30px;
+        width: 30px;
     }
     ion-input{
-        position: absolute;
-        height: 31px;
-        width: 301px;
-        left: 54px;
-        top: 16px;        
-
+        justify-content: center;
         border-radius: 3px;
         color: #65676D;
         background: #D9D9D9;
     }
-    .foto-pizza{
-        box-sizing: border-box;
-        position: absolute;
-        height: 168px;
-        width: 168px;
-        left: 19px;
-        top: 124px;
-        border-radius: 30px;        
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-    }
-    .foto-hamburguer{
-        box-sizing: border-box;
-        position: absolute;
-
-        height: 168px;
-        width: 169.0059814453125px;
-        left: 201px;
-        top: 124px;
-        border-radius: 30px;        
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-    }
-    .foto-sorvete{
-        box-sizing: border-box;
-        position: absolute;
-
-        height: 171px;
-        width: 168px;
-        left: 19px;
-        top: 323px;
-        border-radius: 30px;        
-        
-        background: url('/assets/sorvete.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-    }
-    .foto-pudim{
-        box-sizing: border-box;
-        position: absolute;
-
-        height: 169px;
-        width: 168px;
-        left: 202px;
-        top: 321px;
-        border-radius: 30px;            
-        
-        background: url('/assets/pudim.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-    }
     .texto-categoria{
-        position: absolute;
         height: 29px;
         width: 168px;
         left: 111px;
@@ -110,68 +40,40 @@ ion-content{
         
         color: #3F3E3E;
     }
-    .texto-pizza{
-        position: absolute;
-        left: 7.95%;
-        right: 55.13%;
-        top: 30.57%;
-        bottom: 65.4%;
+    .img-categoria{
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-height: 150px;
+        min-height: 150px;
+    }
+    .categoria-titulo{
+        position: relative;
         
         font-family: 'Asap';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 21px;
-        line-height: 25px;
+        line-height: 24px;
         text-align: center;
         
         color: #000000;
     }
-    .texto-hamburguer{
-        position: absolute;
-        left: 54.87%;
-        right: 8.21%;
-        top: 30.57%;
-        bottom: 65.4%;
-        
-        font-family: 'Asap';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 21px;
-        line-height: 25px;
-        text-align: center;
-        
-        color: #000000;
+    .container-categoria{
+        margin: 10px 10px;
+        float: left;
     }
-    .texto-sorvete{
-        position: absolute;
-        left: 7.95%;
-        right: 55.13%;
-        top: 56.38%;
-        bottom: 41.59%;
-        
-        font-family: 'Asap';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 21px;
-        line-height: 25px;
-        text-align: center;
-        
-        color: #000000;
+    .header{
+        width: 100%;
+        min-height: 70px;
+        margin-bottom: 5px;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-    .texto-doce{
-        position: absolute;
-        left: 54.87%;
-        right: 8.21%;
-        top: 56.5%;
-        bottom: 41.47%;
-        
-        font-family: 'Asap';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 21px;
-        line-height: 25px;
-        text-align: center;
-        
-        color: #000000;
+    .organizador{
+        justify-content: space-between;
     }
 }
