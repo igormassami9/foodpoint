@@ -22,6 +22,18 @@ const routes: Routes = [
       {
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+      },
+      {
+        path: 'cardapio-lanche',
+        loadChildren: () => import('../cardapio-lanche/cardapio-lanche.module').then(m => m.CardapioLanchePageModule)
+      },
+      {
+        path: 'categorias-burger',
+        loadChildren: () => import('../categorias-burger/categorias-burger.module').then(m => m.CategoriasBurgerPageModule)
+      },
+      {
+        path: 'carrinho',
+        loadChildren: () => import('../carrinho/carrinho.module').then(m => m.CarrinhoPageModule)
       }
     ]
   }

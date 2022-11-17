@@ -4,9 +4,17 @@
     <ion-buttons slot="start">
       <ion-back-button class="seta-voltar" defaultHref="home"></ion-back-button>
     </ion-buttons>
-    
     <p class="carrinho-titulo">Carrinho</p>
-    
 
+    <div>
+    <div *ngFor="let i of cart$ | async">
+      <p>{{i[0].nome}</p>
+    </div>
+  </div>
+  
+  <ng-template #nocart>
+    <div><h6>Carrinho Vazio</h6></div>
+  </ng-template>
+  
   </div>
   </ion-content>
