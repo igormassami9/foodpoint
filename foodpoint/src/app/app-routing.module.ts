@@ -40,18 +40,6 @@ const routes: Routes = [
     loadChildren: () => import('./categorias-burger/categorias-burger.module').then( m => m.CategoriasBurgerPageModule)
   },
   {
-    path: 'categorias-pizza',
-    loadChildren: () => import('./categorias-pizza/categorias-pizza.module').then( m => m.CategoriasPizzaPageModule)
-  },
-  {
-    path: 'categorias-sorvete',
-    loadChildren: () => import('./categorias-sorvete/categorias-sorvete.module').then( m => m.CategoriasSorvetePageModule)
-  },
-  {
-    path: 'categorias-doce',
-    loadChildren: () => import('./categorias-doce/categorias-doce.module').then( m => m.CategoriasDocePageModule)
-  },
-  {
     path: 'cardapio-lanche',
     loadChildren: () => import('./cardapio-lanche/cardapio-lanche.module').then( m => m.CardapioLanchePageModule)
   },

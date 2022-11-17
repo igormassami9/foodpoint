@@ -25,21 +25,6 @@ ion-content{
         color: #65676D;
         background: #D9D9D9;
     }
-    .texto-categoria{
-        height: 29px;
-        width: 168px;
-        left: 111px;
-        top: 58px;
-        
-        font-family: 'Asap';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 25px;
-        text-align: center;
-        
-        color: #3F3E3E;
-    }
     .img-categoria{
         position: relative;
         background-repeat: no-repeat;
@@ -75,5 +60,6 @@ ion-content{
     }
     .organizador{
         justify-content: space-between;
+        margin-left: 25px;
     }
 }
